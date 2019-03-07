@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $.get("/api/reservations", newReservation)
+    $.get("/api/tables", newReservation)
         .then(function(data){
             for(i=0;i<data.length;i++){
             var listGroupItem = $("<li class='list-group-item'>");
